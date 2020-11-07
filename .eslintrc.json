@@ -11,19 +11,57 @@
   },
   "plugins": [
     "@typescript-eslint",
-    "jest"
+    "jest",
+    "prettier"
   ],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:jest/recommended",
-    "prettier",
+    "plugin:prettier/recommended",
     "prettier/@typescript-eslint"
   ],
   "rules": {
-    "no-unused-vars": "warn",
-    "@typescript-eslint/interface-name-prefix": "off",
-    "@typescript-eslint/no-explicit-any": "off"
+    "brace-style": ["error", "1tbs"],
+		"no-tabs": 0,
+		"semi": "error",
+		"global-require": 0,
+		"no-param-reassign": 0,
+		"no-console": 0,
+		"max-len": [
+			"warn",
+			{
+				"code": 200,
+				"tabWidth": 2,
+				"comments": 200,
+				"ignoreComments": false,
+				"ignoreTrailingComments": true,
+				"ignoreUrls": true,
+				"ignoreStrings": true,
+				"ignoreTemplateLiterals": true,
+				"ignoreRegExpLiterals": true
+			}
+		],
+		"no-underscore-dangle": "off",
+		"no-unused-expressions": "off",
+		"import/prefer-default-export": "off",
+		"no-shadow": "off",
+		"quotes": ["warn", "single"],
+		"prettier/prettier": [
+			"error",
+			{
+				"useTabs": true,
+				"printWidth": 200,
+				"tabWidth": 4,
+				"singleQuote": true,
+				"semi": true,
+				"trailingComma": "all",
+				"bracketSpacing": true,
+				"rcVerbose": true,
+				"arrowParens": "always"
+			}
+		],
+		"@typescript-eslint/explicit-module-boundary-types": 0
   }
 }
