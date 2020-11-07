@@ -1,11 +1,11 @@
 {
-  "name": "e-commerce-backend",
-  "version": "1.0.0",
-  "description": "Backend Service for E-Commerce Website",
+  "name": "yc-gateway",
+  "version": "0.0.1",
+  "description": "Yellow Class Graphql Gateway Service on Node",
   "engines": {
     "node": ">= 12.13"
   },
-  "author": "Anshu S Panda",
+  "author": "Deepank Agarwal",
   "license": "MIT",
   "devDependencies": {
     "@types/express": "^4.17.6",
