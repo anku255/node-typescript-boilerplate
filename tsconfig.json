@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es6",
+    "outDir": "build",
     "module": "commonjs",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
