@@ -1,0 +1,19 @@
+type Subscription {
+  test: TestOutput
+}
+
+input TestInput {
+  x: String
+}
+
+type TestOutput {
+  x: String
+}
+
+type Query {
+  testQ: String
+}
+
+type Mutation {
+  testMutation(params: TestInput): Boolean
+}
